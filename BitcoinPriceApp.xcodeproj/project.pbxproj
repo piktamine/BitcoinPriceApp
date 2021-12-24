@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		940B5C2427754FCE00747321 /* BitcoinPriceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B5C2327754FCE00747321 /* BitcoinPriceAppApp.swift */; };
-		940B5C2627754FCE00747321 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B5C2527754FCE00747321 /* ContentView.swift */; };
+		940B5C2627754FCE00747321 /* BitcoinPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B5C2527754FCE00747321 /* BitcoinPriceView.swift */; };
 		940B5C2827754FCF00747321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B5C2727754FCF00747321 /* Assets.xcassets */; };
 		940B5C2B27754FCF00747321 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B5C2A27754FCF00747321 /* Preview Assets.xcassets */; };
 		940B5C3427754FFD00747321 /* PriceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B5C3327754FFD00747321 /* PriceDetails.swift */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		940B5C2027754FCE00747321 /* BitcoinPriceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinPriceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B5C2327754FCE00747321 /* BitcoinPriceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceAppApp.swift; sourceTree = "<group>"; };
-		940B5C2527754FCE00747321 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		940B5C2527754FCE00747321 /* BitcoinPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceView.swift; sourceTree = "<group>"; };
 		940B5C2727754FCF00747321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B5C2A27754FCF00747321 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940B5C2C27754FCF00747321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				940B5C2327754FCE00747321 /* BitcoinPriceAppApp.swift */,
-				940B5C2527754FCE00747321 /* ContentView.swift */,
+				940B5C2527754FCE00747321 /* BitcoinPriceView.swift */,
 				940B5C3327754FFD00747321 /* PriceDetails.swift */,
 				940B5C2727754FCF00747321 /* Assets.xcassets */,
 				940B5C2C27754FCF00747321 /* Info.plist */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940B5C2627754FCE00747321 /* ContentView.swift in Sources */,
+				940B5C2627754FCE00747321 /* BitcoinPriceView.swift in Sources */,
 				940B5C372775541F00747321 /* BitcoinPriceViewModel.swift in Sources */,
 				940B5C3427754FFD00747321 /* PriceDetails.swift in Sources */,
 				940B5C2427754FCE00747321 /* BitcoinPriceAppApp.swift in Sources */,
