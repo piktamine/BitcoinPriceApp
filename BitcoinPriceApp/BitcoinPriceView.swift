@@ -17,8 +17,30 @@ struct BitcoinPriceView: View {
     @State private var selectedCurrency: Currency = .usd
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(spacing: 0){
+            Text("Updated: \(viewModel.lastUpdated)")
+                .padding([.top, .bottom])
+                .foregroundColor(.bitcoinGreen)
+            
+            TabView(selection: $selectedCurrency){
+                ForEach(viewModel.priceDetails.indices, id: \.self) { index in
+                    let priceDetails = viewModel.priceDetails[index]
+                    PriceDetailsView(priceDetails: priceDetails)
+                        .tag(priceDetails.currency)
+                }
+            }
+            .tabViewStyle(PageTabViewStyle())
+            
+            VStack(spacing: 0){
+                HStack(alignment: .center){
+                    Picker(selection: $selectedCurrency, label: Text("Currency"), content: {
+                        Text("\(Currency.usd.icon) \(Currency.usd.code)").tag(Currency.usd)
+                        Text("\(Currency.gbp.icon) \(Currency.gbp.code)").tag(Currency.gbp)
+                        Text("\(Currency.eur.icon) \(Currency.eur.code)").tag(Currency.eur)
+                    })
+                }
+            }
+        }
     }
 }
 
@@ -38,6 +60,7 @@ struct PriceDetailsView: View{
                     .bold()
                     .font(.largeTitle)
             }
+            .foregroundColor(.white)
         }
     }
 }
