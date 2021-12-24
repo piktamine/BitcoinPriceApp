@@ -39,5 +39,8 @@ struct PriceDetails {
     let currency: Currency
     let rate: String
     
-    //public init(currency: Currency, rate: String = "--")
+    public init(currency: Currency, rate: String = "--"){
+        self.currency = currency
+        self.rate = rate
+    }
 }
