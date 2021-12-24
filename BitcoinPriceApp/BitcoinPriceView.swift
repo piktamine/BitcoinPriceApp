@@ -22,15 +22,15 @@ struct BitcoinPriceView: View {
     }
 }
 
-struct PriceDeatilsView: View{
-    let priceDetails = PriceDetails
+struct PriceDetailsView: View{
+    let priceDetails: PriceDetails
     
     var body: some View {
         ZStack{
             Color.bitcoinGreen
             VStack{
                 Text(priceDetails.currency.icon)
-                    .font(.largeTittle)
+                    .font(.largeTitle)
                 Text("1 Bitcoin =")
                     .bold()
                     .font(.title2)

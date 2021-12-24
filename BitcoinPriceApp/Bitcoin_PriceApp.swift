@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Bitcoin_PriceAppApp: App {
+struct Bitcoin_PriceApp: App {
     var body: some Scene {
         WindowGroup {
             BitcoinPriceView(viewModel: BitcoinPriceViewModel())
