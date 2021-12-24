@@ -11,6 +11,7 @@
 		940B5C2627754FCE00747321 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B5C2527754FCE00747321 /* ContentView.swift */; };
 		940B5C2827754FCF00747321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B5C2727754FCF00747321 /* Assets.xcassets */; };
 		940B5C2B27754FCF00747321 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B5C2A27754FCF00747321 /* Preview Assets.xcassets */; };
+		940B5C3427754FFD00747321 /* PriceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B5C3327754FFD00747321 /* PriceDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		940B5C2727754FCF00747321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B5C2A27754FCF00747321 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940B5C2C27754FCF00747321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940B5C3327754FFD00747321 /* PriceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				940B5C2327754FCE00747321 /* BitcoinPriceAppApp.swift */,
 				940B5C2527754FCE00747321 /* ContentView.swift */,
+				940B5C3327754FFD00747321 /* PriceDetails.swift */,
 				940B5C2727754FCF00747321 /* Assets.xcassets */,
 				940B5C2C27754FCF00747321 /* Info.plist */,
 				940B5C2927754FCF00747321 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				940B5C2627754FCE00747321 /* ContentView.swift in Sources */,
+				940B5C3427754FFD00747321 /* PriceDetails.swift in Sources */,
 				940B5C2427754FCE00747321 /* BitcoinPriceAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
