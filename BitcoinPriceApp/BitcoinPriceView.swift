@@ -38,9 +38,27 @@ struct BitcoinPriceView: View {
                         Text("\(Currency.gbp.icon) \(Currency.gbp.code)").tag(Currency.gbp)
                         Text("\(Currency.eur.icon) \(Currency.eur.code)").tag(Currency.eur)
                     })
+                    .padding(.leading)
+                    
+                    Spacer()
+                    
+                    Button(action: viewModel.onAppear){
+                        Image(systemName: "arrow.clockwise")
+                            .font(.largeTitle)
+                    }.padding(.trailing)
                 }
+                .padding(.top)
+                
+                Link(
+                    "Powered by Coindesk",
+                    destination: URL(string: "http://coindesk.com/price/bitcoin")!
+                )
+                .font(.caption)
             }
+            .foregroundColor(.bitcoinGreen)
         }
+        .onAppear(perform: viewModel.onAppear)
+        .pickerStyle(MenuPickerStyle())
     }
 }
 
